@@ -446,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZTCZR98J8;
 				GCC_PREFIX_HEADER = /Users/liujian/Desktop/git/LJExercise/LJExercise/LJExercise/LJExerciseUITests/LJPrefixHeader.pch;
 				INFOPLIST_FILE = LJExercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -460,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZTCZR98J8;
 				GCC_PREFIX_HEADER = /Users/liujian/Desktop/git/LJExercise/LJExercise/LJExercise/LJExerciseUITests/LJPrefixHeader.pch;
 				INFOPLIST_FILE = LJExercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

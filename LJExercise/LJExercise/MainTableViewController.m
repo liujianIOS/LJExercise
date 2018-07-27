@@ -12,7 +12,7 @@
 @interface MainTableViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property(nonatomic, strong) NSArray * nameArr;
-@property(nonatomic, strong) UITableView * table;
+@property(nonatomic, strong) UITableView * tableView;
 
 @end
 
@@ -23,7 +23,7 @@ static NSString * cell_reuseIdentifier = @"cell_mainTable_reuseIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Overview";
-    [self.view addSubview:self.table];
+    [self.view addSubview:self.tableView];
 }
 
 #pragma mark - UItableVeiwDelegate and UITableViewDataSouirce
@@ -68,8 +68,8 @@ static NSString * cell_reuseIdentifier = @"cell_mainTable_reuseIdentifier";
     return _nameArr;
 }
 
--(UITableView *)table{
-    if (_table == nil) {
+-(UITableView *)tableView{
+    if (_tableView == nil) {
         CGFloat startY = 44;
         UITableView * table = [[UITableView alloc] initWithFrame:CGRectMake(0, startY, SCREEN_WIDTH, SCREEN_HEIGHT - startY) style:UITableViewStylePlain];
         table.backgroundColor = [UIColor clearColor];
@@ -78,10 +78,12 @@ static NSString * cell_reuseIdentifier = @"cell_mainTable_reuseIdentifier";
         table.delegate = self;
         table.dataSource = self;
         [table registerClass:[UITableViewCell class] forCellReuseIdentifier:cell_reuseIdentifier];
-        table.tableFooterView = [[UIView alloc] init];
-        _table = table;
+        UIView * footer = [[UIView alloc] init];
+        footer.backgroundColor = [UIColor yellowColor];
+        table.tableFooterView = footer;
+        _tableView = table;
     }
-    return _table;
+    return _tableView;
 }
 
 @end
