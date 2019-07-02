@@ -8,6 +8,7 @@
 
 #import "MainTableViewController.h"
 #import "LJTextViewContriller.h"
+#import "Contant.h"
 
 @interface MainTableViewController ()<UITableViewDelegate, UITableViewDataSource>
 
